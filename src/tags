@@ -1,0 +1,600 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Bubble	editwindow.cc	/^    Bubble,$/;"	m	class:LastOpCode	file:
+CaseUpDown	editwindow.cc	/^    CaseUpDown,$/;"	m	class:LastOpCode	file:
+Chooser	chooser.cc	/^Chooser::Chooser(string* result) : pimpl{new Impl{this, result}} {}$/;"	f	class:Chooser
+Chooser	chooser.h	/^class Chooser: public Gtk::Window$/;"	c
+Chooser::Chooser	chooser.cc	/^Chooser::Chooser(string* result) : pimpl{new Impl{this, result}} {}$/;"	f	class:Chooser
+Chooser::Impl	chooser.cc	/^class Chooser::Impl$/;"	c	class:Chooser	file:
+Chooser::Impl::Impl	chooser.cc	/^Chooser::Impl::Impl(Chooser* parent, string* result_)$/;"	f	class:Chooser::Impl
+Chooser::Impl::buildListStore	chooser.cc	/^void Chooser::Impl::buildListStore(const string& pattern)$/;"	f	class:Chooser::Impl
+Chooser::Impl::chooser	chooser.cc	/^    Chooser* chooser;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::curdir	chooser.cc	/^    string curdir;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::directories	chooser.cc	/^    shared_ptr<vector<string>> directories;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::dotfiles	chooser.cc	/^    shared_ptr<vector<string>> dotfiles;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::entry	chooser.cc	/^    Gtk::Entry* entry;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::entryBufferOnDeletedText	chooser.cc	/^void Chooser::Impl::entryBufferOnDeletedText(unsigned int placeholder1,$/;"	f	class:Chooser::Impl
+Chooser::Impl::entryBufferOnInsertedText	chooser.cc	/^void Chooser::Impl::entryBufferOnInsertedText(unsigned int placeholder1,$/;"	f	class:Chooser::Impl
+Chooser::Impl::entryOnActivate	chooser.cc	/^void Chooser::Impl::entryOnActivate()$/;"	f	class:Chooser::Impl
+Chooser::Impl::entryOnKeyPress	chooser.cc	/^bool Chooser::Impl::entryOnKeyPress(GdkEventKey* ev)$/;"	f	class:Chooser::Impl
+Chooser::Impl::fileNameMatcher	chooser.cc	/^bool Chooser::Impl::fileNameMatcher(const string& filename,$/;"	f	class:Chooser::Impl
+Chooser::Impl::getFilesOnFS	chooser.cc	/^void Chooser::Impl::getFilesOnFS(const string& directory,$/;"	f	class:Chooser::Impl
+Chooser::Impl::grid	chooser.cc	/^    Gtk::Grid* grid;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::highlightLine	chooser.cc	/^void Chooser::Impl::highlightLine(unsigned int lineNum)$/;"	f	class:Chooser::Impl
+Chooser::Impl::init	chooser.cc	/^void Chooser::Impl::init(const string& args)$/;"	f	class:Chooser::Impl
+Chooser::Impl::modelColumns	chooser.cc	/^    ModelColumns modelColumns;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::recentFiles	chooser.cc	/^    vector<string> recentFiles;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::refListStore	chooser.cc	/^    Glib::RefPtr<Gtk::ListStore> refListStore;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::regulars	chooser.cc	/^    shared_ptr<vector<string>> regulars;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::result	chooser.cc	/^    string* result;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::scrolledWindow	chooser.cc	/^    Gtk::ScrolledWindow scrolledWindow;$/;"	m	class:Chooser::Impl	file:
+Chooser::Impl::treeView	chooser.cc	/^    Gtk::TreeView treeView;$/;"	m	class:Chooser::Impl	file:
+Chooser::init	chooser.cc	/^void Chooser::init(const string& args) { pimpl->init(args); }$/;"	f	class:Chooser
+Chooser::pimpl	chooser.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Chooser
+Column	column.cc	/^Column::Column() : Gtk::Grid(), pimpl{new Impl{this}} {}$/;"	f	class:Column
+Column	column.h	/^class Column: public Gtk::Grid$/;"	c
+Column::Column	column.cc	/^Column::Column() : Gtk::Grid(), pimpl{new Impl{this}} {}$/;"	f	class:Column
+Column::Impl	column.cc	/^class Column::Impl$/;"	c	class:Column	file:
+Column::Impl::Impl	column.cc	/^Column::Impl::Impl(Column* parent)$/;"	f	class:Column::Impl
+Column::Impl::addWindow	column.cc	/^void Column::Impl::addWindow(EditWindow& ew, EditWindow& sibling)$/;"	f	class:Column::Impl
+Column::Impl::appendWindow	column.cc	/^void Column::Impl::appendWindow(const EditWindow& ew)$/;"	f	class:Column::Impl
+Column::Impl::c	column.cc	/^    Column* c;$/;"	m	class:Column::Impl	file:
+Column::Impl::closeWindow	column.cc	/^optional<unsigned int> Column::Impl::closeWindow(EditWindow* ew)$/;"	f	class:Column::Impl
+Column::Impl::closeWindowsForFile	column.cc	/^unsigned int Column::Impl::closeWindowsForFile(shared_ptr<File> f)$/;"	f	class:Column::Impl
+Column::Impl::editWindows	column.cc	/^    unique_ptr<vector<EditWindow*>> editWindows;$/;"	m	class:Column::Impl	file:
+Column::Impl::getEditWindow	column.cc	/^optional<EditWindow*> Column::Impl::getEditWindow(const unsigned int rowNum)$/;"	f	class:Column::Impl
+Column::Impl::getFileWindow	column.cc	/^optional<FileWindow*> Column::Impl::getFileWindow(const string& path)$/;"	f	class:Column::Impl
+Column::Impl::getRow	column.cc	/^optional<unsigned int> Column::Impl::getRow(const EditWindow* ew)$/;"	f	class:Column::Impl
+Column::Impl::getScratchWindow	column.cc	/^optional<ScratchWindow*> Column::Impl::getScratchWindow()$/;"	f	class:Column::Impl
+Column::Impl::init	column.cc	/^void Column::Impl::init()$/;"	f	class:Column::Impl
+Column::Impl::replaceWindow	column.cc	/^void Column::Impl::replaceWindow(EditWindow* oldEW, EditWindow* newEW)$/;"	f	class:Column::Impl
+Column::addWindow	column.cc	/^void Column::addWindow(EditWindow& ew, EditWindow& sibling) {$/;"	f	class:Column
+Column::appendWindow	column.cc	/^void Column::appendWindow(const EditWindow& ew) { pimpl->appendWindow(ew); }$/;"	f	class:Column
+Column::closeWindow	column.cc	/^optional<unsigned int> Column::closeWindow(EditWindow* ew) {$/;"	f	class:Column
+Column::closeWindowsForFile	column.cc	/^unsigned int Column::closeWindowsForFile(shared_ptr<File> f) {$/;"	f	class:Column
+Column::getEditWindow	column.cc	/^optional<EditWindow*> Column::getEditWindow(const unsigned int rowNum) {$/;"	f	class:Column
+Column::getFileWindow	column.cc	/^optional<FileWindow*> Column::getFileWindow(const string& path) {$/;"	f	class:Column
+Column::getRow	column.cc	/^optional<unsigned int> Column::getRow(const EditWindow* ew) {$/;"	f	class:Column
+Column::getScratchWindow	column.cc	/^optional<ScratchWindow*> Column::getScratchWindow() {$/;"	f	class:Column
+Column::init	column.cc	/^void Column::init() { pimpl->init(); }$/;"	f	class:Column
+Column::pimpl	column.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Column
+Column::replaceWindow	column.cc	/^void Column::replaceWindow(EditWindow* oldEW, EditWindow* newEW) {$/;"	f	class:Column
+Command	command.cc	/^Command::Command() : pimpl{new Impl{this}} {}$/;"	f	class:Command
+Command	command.h	/^class Command$/;"	c
+Command::Command	command.cc	/^Command::Command() : pimpl{new Impl{this}} {}$/;"	f	class:Command
+Command::Impl	command.cc	/^class Command::Impl$/;"	c	class:Command	file:
+Command::Impl::CommandHandler	command.cc	/^    typedef CommandStatus (Command::Impl::*CommandHandler)($/;"	t	class:Command::Impl	file:
+Command::Impl::Impl	command.cc	/^Command::Impl::Impl(Command* parent) : cp{parent} {$/;"	f	class:Command::Impl
+Command::Impl::ch_bubble	command.cc	/^CommandStatus Command::Impl::ch_bubble(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_choose	command.cc	/^CommandStatus Command::Impl::ch_choose(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_close	command.cc	/^CommandStatus Command::Impl::ch_close(const string& _)$/;"	f	class:Command::Impl
+Command::Impl::ch_deleteBuffer	command.cc	/^CommandStatus Command::Impl::ch_deleteBuffer(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_edit	command.cc	/^CommandStatus Command::Impl::ch_edit(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_files	command.cc	/^CommandStatus Command::Impl::ch_files(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_gotoLine	command.cc	/^CommandStatus Command::Impl::ch_gotoLine(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_newColumn	command.cc	/^CommandStatus Command::Impl::ch_newColumn(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_quit	command.cc	/^CommandStatus Command::Impl::ch_quit(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_save	command.cc	/^CommandStatus Command::Impl::ch_save(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_shade	command.cc	/^CommandStatus Command::Impl::ch_shade(const string& args)$/;"	f	class:Command::Impl
+Command::Impl::ch_split	command.cc	/^CommandStatus Command::Impl::ch_split(const string& _)$/;"	f	class:Command::Impl
+Command::Impl::commandMap	command.cc	/^    map<string, CommandHandler> commandMap;$/;"	m	class:Command::Impl	file:
+Command::Impl::cp	command.cc	/^    Command* cp;$/;"	m	class:Command::Impl	file:
+Command::Impl::execute	command.cc	/^CommandStatus Command::Impl::execute(const string& command)$/;"	f	class:Command::Impl
+Command::Impl::log	command.cc	/^void Command::Impl::log(const string& args)$/;"	f	class:Command::Impl
+Command::execute	command.cc	/^CommandStatus Command::execute(const string& command) {$/;"	f	class:Command
+Command::log	command.cc	/^void Command::log(const std::string& msg) { pimpl->log(msg); }$/;"	f	class:Command
+Command::pimpl	command.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Command
+CommandHandler	command.cc	/^    typedef CommandStatus (Command::Impl::*CommandHandler)($/;"	t	class:Command::Impl	file:
+CommandNotFound	command.h	/^    CommandNotFound,$/;"	m	class:CommandStatusCode
+CommandNotImplemented	command.h	/^    CommandNotImplemented,$/;"	m	class:CommandStatusCode
+CommandStatus	command.h	/^typedef std::tuple<CommandStatusCode, std::string> CommandStatus;$/;"	t
+CommandStatusCode	command.h	/^enum class CommandStatusCode: unsigned int {$/;"	c
+CommandStatusCode::CommandNotFound	command.h	/^    CommandNotFound,$/;"	m	class:CommandStatusCode
+CommandStatusCode::CommandNotImplemented	command.h	/^    CommandNotImplemented,$/;"	m	class:CommandStatusCode
+CommandStatusCode::EmptyCommand	command.h	/^    EmptyCommand,$/;"	m	class:CommandStatusCode
+CommandStatusCode::Error	command.h	/^    Error,$/;"	m	class:CommandStatusCode
+CommandStatusCode::Success	command.h	/^    Success,$/;"	m	class:CommandStatusCode
+CtrlX	editwindow.cc	/^    CtrlX,$/;"	m	class:LastOpCode	file:
+EditWindow	editwindow.cc	/^EditWindow::EditWindow() : Gtk::Grid(), pimpl{new Impl{this}} {}$/;"	f	class:EditWindow
+EditWindow	editwindow.h	/^class EditWindow: public Gtk::Grid$/;"	c
+EditWindow::EditWindow	editwindow.cc	/^EditWindow::EditWindow() : Gtk::Grid(), pimpl{new Impl{this}} {}$/;"	f	class:EditWindow
+EditWindow::Impl	editwindow.cc	/^class EditWindow::Impl$/;"	c	class:EditWindow	file:
+EditWindow::Impl::Impl	editwindow.cc	/^EditWindow::Impl::Impl(EditWindow* parent)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::KeyHandler	editwindow.cc	/^    typedef bool (EditWindow::Impl::*KeyHandler)(GdkEventKey*);$/;"	t	class:EditWindow::Impl	file:
+EditWindow::Impl::buffer	editwindow.cc	/^    GsvBuffer buffer;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::buildKeyHandlers	editwindow.cc	/^void EditWindow::Impl::buildKeyHandlers()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::colorBox	editwindow.cc	/^    Gtk::EventBox* colorBox;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::colorBoxOnButtonPress	editwindow.cc	/^bool EditWindow::Impl::colorBoxOnButtonPress(GdkEventButton* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::colorBoxOnDragDataGet	editwindow.cc	/^void EditWindow::Impl::colorBoxOnDragDataGet($/;"	f	class:EditWindow::Impl
+EditWindow::Impl::ctrlKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlKeyMap;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::ctrlXCtrlKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlXCtrlKeyMap;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::ctrlXKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlXKeyMap;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::ew	editwindow.cc	/^    EditWindow* ew;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::getBubbleNumber	editwindow.cc	/^unsigned int EditWindow::Impl::getBubbleNumber()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::getBuffer	editwindow.cc	/^GsvBuffer& EditWindow::Impl::getBuffer()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::getColorBox	editwindow.cc	/^Gtk::EventBox* EditWindow::Impl::getColorBox()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::getView	editwindow.cc	/^Gsv::View& EditWindow::Impl::getView()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::gotoLine	editwindow.cc	/^void EditWindow::Impl::gotoLine(unsigned int lineNum)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::grabFocus	editwindow.cc	/^void EditWindow::Impl::grabFocus()$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::headline	editwindow.cc	/^    Gtk::Grid* headline;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::kh_bubble	editwindow.cc	/^bool EditWindow::Impl::kh_bubble(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_ctrlX	editwindow.cc	/^bool EditWindow::Impl::kh_ctrlX(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_deleteBuffer	editwindow.cc	/^bool EditWindow::Impl::kh_deleteBuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_deleteWindow	editwindow.cc	/^bool EditWindow::Impl::kh_deleteWindow(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_findFile	editwindow.cc	/^bool EditWindow::Impl::kh_findFile(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_focusMinibuffer	editwindow.cc	/^bool EditWindow::Impl::kh_focusMinibuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_quit	editwindow.cc	/^bool EditWindow::Impl::kh_quit(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_recenter	editwindow.cc	/^bool EditWindow::Impl::kh_recenter(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_scrollDown	editwindow.cc	/^bool EditWindow::Impl::kh_scrollDown(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_scrollUp	editwindow.cc	/^bool EditWindow::Impl::kh_scrollUp(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_scroll_sub	editwindow.cc	/^bool EditWindow::Impl::kh_scroll_sub(bool forward)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_splitWindow	editwindow.cc	/^bool EditWindow::Impl::kh_splitWindow(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::kh_switchBuffer	editwindow.cc	/^bool EditWindow::Impl::kh_switchBuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::label	editwindow.cc	/^    Gtk::Label* label;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::lastOp	editwindow.cc	/^    LastOp lastOp;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::mod1KeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> mod1KeyMap;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::save	editwindow.cc	/^    virtual void save(const string& altFilename="") {}$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::scrolledWindow	editwindow.cc	/^    Gtk::ScrolledWindow scrolledWindow;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::setBubbleNumber	editwindow.cc	/^void EditWindow::Impl::setBubbleNumber(unsigned int num)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::setBuffer	editwindow.cc	/^void EditWindow::Impl::setBuffer(const GsvBuffer& buf)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::setLabelText	editwindow.cc	/^void EditWindow::Impl::setLabelText(const string& text)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::shadeMode	editwindow.cc	/^ShadeMode EditWindow::Impl::shadeMode(const ShadeMode& sm)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::shadeModeStatus	editwindow.cc	/^    ShadeMode shadeModeStatus;	\/\/ should be either Unshaded or Shaded$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::view	editwindow.cc	/^    Gsv::View view;$/;"	m	class:EditWindow::Impl	file:
+EditWindow::Impl::viewOnDragDataReceived	editwindow.cc	/^void EditWindow::Impl::viewOnDragDataReceived($/;"	f	class:EditWindow::Impl
+EditWindow::Impl::viewOnDragDrop	editwindow.cc	/^bool EditWindow::Impl::viewOnDragDrop($/;"	f	class:EditWindow::Impl
+EditWindow::Impl::viewOnFocusInOut	editwindow.cc	/^bool EditWindow::Impl::viewOnFocusInOut(GdkEventFocus* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::viewOnKeyPress	editwindow.cc	/^bool EditWindow::Impl::viewOnKeyPress(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::viewOnScroll	editwindow.cc	/^bool EditWindow::Impl::viewOnScroll(GdkEventScroll* ev)$/;"	f	class:EditWindow::Impl
+EditWindow::Impl::wrapperForLabel	editwindow.cc	/^    Gtk::EventBox* wrapperForLabel;	\/\/ for coloring the label background$/;"	m	class:EditWindow::Impl	file:
+EditWindow::getBubbleNumber	editwindow.cc	/^unsigned int EditWindow::getBubbleNumber() { return pimpl->getBubbleNumber(); }$/;"	f	class:EditWindow
+EditWindow::getBuffer	editwindow.cc	/^GsvBuffer& EditWindow::getBuffer() { return pimpl->getBuffer(); }$/;"	f	class:EditWindow
+EditWindow::getColorBox	editwindow.cc	/^Gtk::EventBox* EditWindow::getColorBox() { return pimpl->getColorBox(); }$/;"	f	class:EditWindow
+EditWindow::getView	editwindow.cc	/^Gsv::View& EditWindow::getView() { return pimpl->getView(); }$/;"	f	class:EditWindow
+EditWindow::gotoLine	editwindow.cc	/^void EditWindow::gotoLine(unsigned int lineNum) { pimpl->gotoLine(lineNum); }$/;"	f	class:EditWindow
+EditWindow::grabFocus	editwindow.cc	/^void EditWindow::grabFocus() { pimpl->grabFocus(); }$/;"	f	class:EditWindow
+EditWindow::pimpl	editwindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:EditWindow
+EditWindow::save	editwindow.h	/^    virtual void save(const std::string& altFilename) {}$/;"	f	class:EditWindow
+EditWindow::setBubbleNumber	editwindow.cc	/^void EditWindow::setBubbleNumber(unsigned int num) {$/;"	f	class:EditWindow
+EditWindow::setBuffer	editwindow.cc	/^void EditWindow::setBuffer(const GsvBuffer& buf) { pimpl->setBuffer(buf); }$/;"	f	class:EditWindow
+EditWindow::setLabelText	editwindow.cc	/^void EditWindow::setLabelText(const string& text) {$/;"	f	class:EditWindow
+EditWindow::shadeMode	editwindow.cc	/^ShadeMode EditWindow::shadeMode(const ShadeMode& sm) {$/;"	f	class:EditWindow
+EditWindow::shortDesc	editwindow.h	/^    virtual const std::string shortDesc() { return ""; }$/;"	f	class:EditWindow
+EditWindowPos	windowmgr.cc	/^typedef std::tuple<unsigned int, unsigned int> EditWindowPos;$/;"	t	file:
+EmptyCommand	command.h	/^    EmptyCommand,$/;"	m	class:CommandStatusCode
+Error	command.h	/^    Error,$/;"	m	class:CommandStatusCode
+File	file.cc	/^File::File(const string& path) : pimpl{new Impl{this, path}} {}$/;"	f	class:File
+File	file.h	/^class File$/;"	c
+File::File	file.cc	/^File::File(const string& path) : pimpl{new Impl{this, path}} {}$/;"	f	class:File
+File::Impl	file.cc	/^class File::Impl$/;"	c	class:File	file:
+File::Impl::Impl	file.cc	/^File::Impl::Impl(File* parent, const string& path_)$/;"	f	class:File::Impl
+File::Impl::addBuffer	file.cc	/^void File::Impl::addBuffer(const GsvBuffer& buf)$/;"	f	class:File::Impl
+File::Impl::bufferOnErase	file.cc	/^void File::Impl::bufferOnErase(const Gtk::TextBuffer::iterator start,$/;"	f	class:File::Impl
+File::Impl::bufferOnInsert	file.cc	/^void File::Impl::bufferOnInsert(const Gtk::TextBuffer::iterator& pos,$/;"	f	class:File::Impl
+File::Impl::buffers	file.cc	/^    unique_ptr<vector<GsvBuffer>> buffers;$/;"	m	class:File::Impl	file:
+File::Impl::deleteBuffer	file.cc	/^void File::Impl::deleteBuffer(const GsvBuffer& buf)$/;"	f	class:File::Impl
+File::Impl::getGioFile	file.cc	/^GioFile File::Impl::getGioFile()$/;"	f	class:File::Impl
+File::Impl::getNewBuffer	file.cc	/^GsvBuffer File::Impl::getNewBuffer() {$/;"	f	class:File::Impl
+File::Impl::giofile	file.cc	/^    GioFile giofile;$/;"	m	class:File::Impl	file:
+File::Impl::init	file.cc	/^optional<string> File::Impl::init() {$/;"	f	class:File::Impl
+File::Impl::modifying	file.cc	/^    bool modifying;	\/\/ multi-buffer modification is in progress$/;"	m	class:File::Impl	file:
+File::Impl::path	file.cc	/^    string path;$/;"	m	class:File::Impl	file:
+File::Impl::save	file.cc	/^void File::Impl::save(const string& text)$/;"	f	class:File::Impl
+File::addBuffer	file.cc	/^void File::addBuffer(const GsvBuffer& buf) { pimpl->addBuffer(buf); }$/;"	f	class:File
+File::deleteBuffer	file.cc	/^void File::deleteBuffer(const GsvBuffer& buf) { pimpl->deleteBuffer(buf); }$/;"	f	class:File
+File::getGioFile	file.cc	/^GioFile File::getGioFile() { return pimpl->getGioFile(); }$/;"	f	class:File
+File::getNewBuffer	file.cc	/^GsvBuffer File::getNewBuffer() { return pimpl->getNewBuffer(); }$/;"	f	class:File
+File::init	file.cc	/^optional<string> File::init() { return pimpl->init(); }$/;"	f	class:File
+File::pimpl	file.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:File
+File::save	file.cc	/^void File::save(const string& text) { pimpl->save(text); }$/;"	f	class:File
+FileMgr	filemgr.cc	/^FileMgr::FileMgr() : pimpl{new Impl{this}} {}$/;"	f	class:FileMgr
+FileMgr	filemgr.h	/^class FileMgr$/;"	c
+FileMgr::FileMgr	filemgr.cc	/^FileMgr::FileMgr() : pimpl{new Impl{this}} {}$/;"	f	class:FileMgr
+FileMgr::Impl	filemgr.cc	/^class FileMgr::Impl$/;"	c	class:FileMgr	file:
+FileMgr::Impl::Impl	filemgr.cc	/^FileMgr::Impl::Impl(FileMgr* parent)$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::cleanup	filemgr.cc	/^void FileMgr::Impl::cleanup()$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::deleteFile	filemgr.cc	/^void FileMgr::Impl::deleteFile(shared_ptr<File> f)$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::files	filemgr.cc	/^    map<string, shared_ptr<File>> files;	\/\/ use '~' for HOME$/;"	m	class:FileMgr::Impl	file:
+FileMgr::Impl::fm	filemgr.cc	/^    FileMgr* fm;$/;"	m	class:FileMgr::Impl	file:
+FileMgr::Impl::getFile	filemgr.cc	/^optional<shared_ptr<File>> FileMgr::Impl::getFile(const string& path,$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::getFileNames	filemgr.cc	/^vector<string> FileMgr::Impl::getFileNames()$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::getRecentFiles	filemgr.cc	/^vector<string> FileMgr::Impl::getRecentFiles()$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::init	filemgr.cc	/^void FileMgr::Impl::init()$/;"	f	class:FileMgr::Impl
+FileMgr::Impl::recentFiles	filemgr.cc	/^    vector<string>* recentFiles;	\/\/ old to new; use '~' for HOME$/;"	m	class:FileMgr::Impl	file:
+FileMgr::cleanup	filemgr.cc	/^void FileMgr::cleanup() { pimpl->cleanup(); }$/;"	f	class:FileMgr
+FileMgr::deleteFile	filemgr.cc	/^void FileMgr::deleteFile(shared_ptr<File> f) { pimpl->deleteFile(f); }$/;"	f	class:FileMgr
+FileMgr::getFile	filemgr.cc	/^optional<shared_ptr<File>> FileMgr::getFile(const string& path,$/;"	f	class:FileMgr
+FileMgr::getFileNames	filemgr.cc	/^vector<string> FileMgr::getFileNames() { return pimpl->getFileNames(); }$/;"	f	class:FileMgr
+FileMgr::getRecentFiles	filemgr.cc	/^vector<string> FileMgr::getRecentFiles() { return pimpl->getRecentFiles(); }$/;"	f	class:FileMgr
+FileMgr::init	filemgr.cc	/^void FileMgr::init() { pimpl->init(); }$/;"	f	class:FileMgr
+FileMgr::pimpl	filemgr.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:FileMgr
+FileWindow	filewindow.cc	/^FileWindow::FileWindow() : EditWindow(), pimpl{new Impl{this}} {}$/;"	f	class:FileWindow
+FileWindow	filewindow.h	/^class FileWindow: public EditWindow$/;"	c
+FileWindow::FileWindow	filewindow.cc	/^FileWindow::FileWindow() : EditWindow(), pimpl{new Impl{this}} {}$/;"	f	class:FileWindow
+FileWindow::Impl	filewindow.cc	/^class FileWindow::Impl$/;"	c	class:FileWindow	file:
+FileWindow::Impl::Impl	filewindow.cc	/^FileWindow::Impl::Impl(FileWindow* parent) : fw{parent}, file{nullptr} {}$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::bufferOnInsert	filewindow.cc	/^void FileWindow::Impl::bufferOnInsert(const Gtk::TextBuffer::iterator& pos,$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::file	filewindow.cc	/^    shared_ptr<File> file;$/;"	m	class:FileWindow::Impl	file:
+FileWindow::Impl::fw	filewindow.cc	/^    FileWindow* fw;$/;"	m	class:FileWindow::Impl	file:
+FileWindow::Impl::getFile	filewindow.cc	/^shared_ptr<File> FileWindow::Impl::getFile()$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::init	filewindow.cc	/^void FileWindow::Impl::init() {}$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::save	filewindow.cc	/^void FileWindow::Impl::save(const string& altFilename)$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::setBuffer	filewindow.cc	/^void FileWindow::Impl::setBuffer(const GsvBuffer& buf)$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::setFile	filewindow.cc	/^void FileWindow::Impl::setFile(shared_ptr<File> f)$/;"	f	class:FileWindow::Impl
+FileWindow::Impl::shortDesc	filewindow.cc	/^const string FileWindow::Impl::shortDesc()$/;"	f	class:FileWindow::Impl
+FileWindow::getFile	filewindow.cc	/^shared_ptr<File> FileWindow::getFile() { return pimpl->getFile(); }$/;"	f	class:FileWindow
+FileWindow::init	filewindow.cc	/^void FileWindow::init() { pimpl->init(); }$/;"	f	class:FileWindow
+FileWindow::pimpl	filewindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:FileWindow
+FileWindow::save	filewindow.cc	/^void FileWindow::save(const string& altFilename) { pimpl->save(altFilename); }$/;"	f	class:FileWindow
+FileWindow::setBuffer	filewindow.cc	/^void FileWindow::setBuffer(const GsvBuffer& buf) { pimpl->setBuffer(buf); }$/;"	f	class:FileWindow
+FileWindow::setFile	filewindow.cc	/^void FileWindow::setFile(shared_ptr<File> file) { pimpl->setFile(file); }$/;"	f	class:FileWindow
+FileWindow::shortDesc	filewindow.cc	/^const string FileWindow::shortDesc() { return pimpl->shortDesc(); }$/;"	f	class:FileWindow
+GioFile	global.h	/^typedef Glib::RefPtr<Gio::File> GioFile;$/;"	t
+GsvBuffer	global.h	/^typedef Glib::RefPtr<Gsv::Buffer> GsvBuffer;$/;"	t
+Impl	chooser.cc	/^Chooser::Impl::Impl(Chooser* parent, string* result_)$/;"	f	class:Chooser::Impl
+Impl	chooser.cc	/^class Chooser::Impl$/;"	c	class:Chooser	file:
+Impl	column.cc	/^Column::Impl::Impl(Column* parent)$/;"	f	class:Column::Impl
+Impl	column.cc	/^class Column::Impl$/;"	c	class:Column	file:
+Impl	command.cc	/^Command::Impl::Impl(Command* parent) : cp{parent} {$/;"	f	class:Command::Impl
+Impl	command.cc	/^class Command::Impl$/;"	c	class:Command	file:
+Impl	editwindow.cc	/^EditWindow::Impl::Impl(EditWindow* parent)$/;"	f	class:EditWindow::Impl
+Impl	editwindow.cc	/^class EditWindow::Impl$/;"	c	class:EditWindow	file:
+Impl	file.cc	/^File::Impl::Impl(File* parent, const string& path_)$/;"	f	class:File::Impl
+Impl	file.cc	/^class File::Impl$/;"	c	class:File	file:
+Impl	filemgr.cc	/^FileMgr::Impl::Impl(FileMgr* parent)$/;"	f	class:FileMgr::Impl
+Impl	filemgr.cc	/^class FileMgr::Impl$/;"	c	class:FileMgr	file:
+Impl	filewindow.cc	/^FileWindow::Impl::Impl(FileWindow* parent) : fw{parent}, file{nullptr} {}$/;"	f	class:FileWindow::Impl
+Impl	filewindow.cc	/^class FileWindow::Impl$/;"	c	class:FileWindow	file:
+Impl	scratchwindow.cc	/^ScratchWindow::Impl::Impl(ScratchWindow* parent) : sw{parent} {}$/;"	f	class:ScratchWindow::Impl
+Impl	scratchwindow.cc	/^class ScratchWindow::Impl$/;"	c	class:ScratchWindow	file:
+Impl	windowmgr.cc	/^WindowMgr::Impl::Impl(WindowMgr* parent)$/;"	f	class:WindowMgr::Impl
+Impl	windowmgr.cc	/^class WindowMgr::Impl$/;"	c	class:WindowMgr	file:
+KeyHandler	editwindow.cc	/^    typedef bool (EditWindow::Impl::*KeyHandler)(GdkEventKey*);$/;"	t	class:EditWindow::Impl	file:
+LastOp	editwindow.cc	/^typedef std::tuple<LastOpCode, unsigned int> LastOp;$/;"	t	file:
+LastOpCode	editwindow.cc	/^enum class LastOpCode: unsigned int {$/;"	c	file:
+LastOpCode::Bubble	editwindow.cc	/^    Bubble,$/;"	m	class:LastOpCode	file:
+LastOpCode::CaseUpDown	editwindow.cc	/^    CaseUpDown,$/;"	m	class:LastOpCode	file:
+LastOpCode::CtrlX	editwindow.cc	/^    CtrlX,$/;"	m	class:LastOpCode	file:
+LastOpCode::LongMovement	editwindow.cc	/^    LongMovement,$/;"	m	class:LastOpCode	file:
+LastOpCode::MidHighLow	editwindow.cc	/^    MidHighLow,$/;"	m	class:LastOpCode	file:
+LastOpCode::Plain	editwindow.cc	/^    Plain,$/;"	m	class:LastOpCode	file:
+LastOpCode::Recenter	editwindow.cc	/^    Recenter,$/;"	m	class:LastOpCode	file:
+LastOpCode::SetMark	editwindow.cc	/^    SetMark,$/;"	m	class:LastOpCode	file:
+LastOpCode::WordCaps	editwindow.cc	/^    WordCaps,$/;"	m	class:LastOpCode	file:
+LongMovement	editwindow.cc	/^    LongMovement,$/;"	m	class:LastOpCode	file:
+MidHighLow	editwindow.cc	/^    MidHighLow,$/;"	m	class:LastOpCode	file:
+ModelColumns	chooser.cc	/^    ModelColumns() { add(type); add(name); add(rowNum); }$/;"	f	class:ModelColumns
+ModelColumns	chooser.cc	/^class ModelColumns: public Gtk::TreeModelColumnRecord$/;"	c	file:
+ModelColumns::ModelColumns	chooser.cc	/^    ModelColumns() { add(type); add(name); add(rowNum); }$/;"	f	class:ModelColumns
+ModelColumns::name	chooser.cc	/^    Gtk::TreeModelColumn<Glib::ustring> name;$/;"	m	class:ModelColumns	file:
+ModelColumns::rowNum	chooser.cc	/^    Gtk::TreeModelColumn<unsigned int> rowNum;	\/\/ hidden field$/;"	m	class:ModelColumns	file:
+ModelColumns::type	chooser.cc	/^    Gtk::TreeModelColumn<Glib::ustring> type;$/;"	m	class:ModelColumns	file:
+Plain	editwindow.cc	/^    Plain,$/;"	m	class:LastOpCode	file:
+Query	global.h	/^    Query,	\/\/ query$/;"	m	class:ShadeMode
+Recenter	editwindow.cc	/^    Recenter,$/;"	m	class:LastOpCode	file:
+ScratchBufferSingleton	scratchwindow.cc	/^    ScratchBufferSingleton() {}$/;"	f	class:ScratchBufferSingleton	file:
+ScratchBufferSingleton	scratchwindow.cc	/^class ScratchBufferSingleton {$/;"	c	file:
+ScratchBufferSingleton::ScratchBufferSingleton	scratchwindow.cc	/^    ScratchBufferSingleton() {}$/;"	f	class:ScratchBufferSingleton	file:
+ScratchBufferSingleton::buffer	scratchwindow.cc	/^    GsvBuffer buffer;$/;"	m	class:ScratchBufferSingleton	file:
+ScratchBufferSingleton::getBuffer	scratchwindow.cc	/^    static GsvBuffer getBuffer() {$/;"	f	class:ScratchBufferSingleton
+ScratchWindow	scratchwindow.cc	/^ScratchWindow::ScratchWindow() : EditWindow(), pimpl{new Impl{this}} {}$/;"	f	class:ScratchWindow
+ScratchWindow	scratchwindow.h	/^class ScratchWindow: public EditWindow$/;"	c
+ScratchWindow::Impl	scratchwindow.cc	/^class ScratchWindow::Impl$/;"	c	class:ScratchWindow	file:
+ScratchWindow::Impl::Impl	scratchwindow.cc	/^ScratchWindow::Impl::Impl(ScratchWindow* parent) : sw{parent} {}$/;"	f	class:ScratchWindow::Impl
+ScratchWindow::Impl::appendText	scratchwindow.cc	/^void ScratchWindow::Impl::appendText(const string& text)$/;"	f	class:ScratchWindow::Impl
+ScratchWindow::Impl::init	scratchwindow.cc	/^void ScratchWindow::Impl::init()$/;"	f	class:ScratchWindow::Impl
+ScratchWindow::Impl::shortDesc	scratchwindow.cc	/^const string ScratchWindow::Impl::shortDesc()$/;"	f	class:ScratchWindow::Impl
+ScratchWindow::Impl::sw	scratchwindow.cc	/^    ScratchWindow* sw;$/;"	m	class:ScratchWindow::Impl	file:
+ScratchWindow::ScratchWindow	scratchwindow.cc	/^ScratchWindow::ScratchWindow() : EditWindow(), pimpl{new Impl{this}} {}$/;"	f	class:ScratchWindow
+ScratchWindow::appendText	scratchwindow.cc	/^void ScratchWindow::appendText(const string& text) { pimpl->appendText(text); }$/;"	f	class:ScratchWindow
+ScratchWindow::init	scratchwindow.cc	/^void ScratchWindow::init() { pimpl->init(); }$/;"	f	class:ScratchWindow
+ScratchWindow::pimpl	scratchwindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:ScratchWindow
+ScratchWindow::shortDesc	scratchwindow.cc	/^const string ScratchWindow::shortDesc() { return pimpl->shortDesc(); }$/;"	f	class:ScratchWindow
+SetMark	editwindow.cc	/^    SetMark,$/;"	m	class:LastOpCode	file:
+ShadeMode	global.h	/^enum class ShadeMode: unsigned int {$/;"	c
+ShadeMode::Query	global.h	/^    Query,	\/\/ query$/;"	m	class:ShadeMode
+ShadeMode::Shaded	global.h	/^    Shaded,$/;"	m	class:ShadeMode
+ShadeMode::Toggle	global.h	/^    Toggle,	\/\/ operation$/;"	m	class:ShadeMode
+ShadeMode::Unshaded	global.h	/^    Unshaded,$/;"	m	class:ShadeMode
+Shaded	global.h	/^    Shaded,$/;"	m	class:ShadeMode
+Success	command.h	/^    Success,$/;"	m	class:CommandStatusCode
+Toggle	global.h	/^    Toggle,	\/\/ operation$/;"	m	class:ShadeMode
+Unshaded	global.h	/^    Unshaded,$/;"	m	class:ShadeMode
+WindowMgr	windowmgr.cc	/^WindowMgr::WindowMgr() : pimpl{new Impl{this}} {}$/;"	f	class:WindowMgr
+WindowMgr	windowmgr.h	/^class WindowMgr: public Gtk::Window$/;"	c
+WindowMgr::Impl	windowmgr.cc	/^class WindowMgr::Impl$/;"	c	class:WindowMgr	file:
+WindowMgr::Impl::Impl	windowmgr.cc	/^WindowMgr::Impl::Impl(WindowMgr* parent)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::addWindow	windowmgr.cc	/^void WindowMgr::Impl::addWindow(const EditWindow& ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::bubble	windowmgr.cc	/^void WindowMgr::Impl::bubble()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::bubblePos	windowmgr.cc	/^    EditWindowPos bubblePos;	\/\/ position where the bubbling started$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::Impl::closeWindow	windowmgr.cc	/^bool WindowMgr::Impl::closeWindow(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::closeWindowsForFile	windowmgr.cc	/^void WindowMgr::Impl::closeWindowsForFile(shared_ptr<File> f)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::columns	windowmgr.cc	/^    Gtk::Grid columns;$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::Impl::deleteFromHistory	windowmgr.cc	/^void WindowMgr::Impl::deleteFromHistory(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::editWindowHistory	windowmgr.cc	/^    deque<EditWindow*>* editWindowHistory;$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::Impl::entry	windowmgr.cc	/^    Gtk::Entry entry;$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::Impl::entryOnActivate	windowmgr.cc	/^void WindowMgr::Impl::entryOnActivate()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::entryOnFocus	windowmgr.cc	/^void WindowMgr::Impl::entryOnFocus()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::entryOnKeyPress	windowmgr.cc	/^bool WindowMgr::Impl::entryOnKeyPress(GdkEventKey* ev)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::focusMinibuffer	windowmgr.cc	/^void WindowMgr::Impl::focusMinibuffer()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getColumn	windowmgr.cc	/^optional<Column&> WindowMgr::Impl::getColumn(unsigned int colNum)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getCurrentColumn	windowmgr.cc	/^Column& WindowMgr::Impl::getCurrentColumn()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getCurrentFocus	windowmgr.cc	/^EditWindow* WindowMgr::Impl::getCurrentFocus()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getEditWindow	windowmgr.cc	/^optional<EditWindow*> WindowMgr::Impl::getEditWindow(const EditWindowPos& pos)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getEditWindowPosition	windowmgr.cc	/^optional<EditWindowPos> WindowMgr::Impl::getEditWindowPosition($/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getFileWindow	windowmgr.cc	/^optional<FileWindow*> WindowMgr::Impl::getFileWindow(const string& path,$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getNumColumns	windowmgr.cc	/^unsigned int WindowMgr::Impl::getNumColumns()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::getScratchWindow	windowmgr.cc	/^optional<ScratchWindow*> WindowMgr::Impl::getScratchWindow($/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::grid	windowmgr.cc	/^    Gtk::Grid grid;$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::Impl::init	windowmgr.cc	/^void WindowMgr::Impl::init()$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::newColumn	windowmgr.cc	/^EditWindow* WindowMgr::Impl::newColumn(optional<EditWindow*> opt_ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::replaceWindow	windowmgr.cc	/^void WindowMgr::Impl::replaceWindow(EditWindow* oldEW, EditWindow* newEW)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::setEntryPlaceholderText	windowmgr.cc	/^void WindowMgr::Impl::setEntryPlaceholderText(const string& msg)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::setFrontEditWindow	windowmgr.cc	/^void WindowMgr::Impl::setFrontEditWindow(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::splitWindow	windowmgr.cc	/^void WindowMgr::Impl::splitWindow(EditWindow& ew)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::windowOnDelete	windowmgr.cc	/^bool WindowMgr::Impl::windowOnDelete(GdkEventAny* ev)$/;"	f	class:WindowMgr::Impl
+WindowMgr::Impl::wm	windowmgr.cc	/^    WindowMgr* wm;$/;"	m	class:WindowMgr::Impl	file:
+WindowMgr::WindowMgr	windowmgr.cc	/^WindowMgr::WindowMgr() : pimpl{new Impl{this}} {}$/;"	f	class:WindowMgr
+WindowMgr::addWindow	windowmgr.cc	/^void WindowMgr::addWindow(const EditWindow& ew) { pimpl->addWindow(ew); }$/;"	f	class:WindowMgr
+WindowMgr::bubble	windowmgr.cc	/^void WindowMgr::bubble() { pimpl->bubble(); }$/;"	f	class:WindowMgr
+WindowMgr::closeWindow	windowmgr.cc	/^bool WindowMgr::closeWindow(EditWindow* ew) { return pimpl->closeWindow(ew); }$/;"	f	class:WindowMgr
+WindowMgr::closeWindowsForFile	windowmgr.cc	/^void WindowMgr::closeWindowsForFile(shared_ptr<File> f) {$/;"	f	class:WindowMgr
+WindowMgr::deleteFromHistory	windowmgr.cc	/^void WindowMgr::deleteFromHistory(EditWindow* ew) {$/;"	f	class:WindowMgr
+WindowMgr::focusMinibuffer	windowmgr.cc	/^void WindowMgr::focusMinibuffer() { pimpl->focusMinibuffer(); }$/;"	f	class:WindowMgr
+WindowMgr::getCurrentColumn	windowmgr.cc	/^Column& WindowMgr::getCurrentColumn() { return pimpl->getCurrentColumn(); }$/;"	f	class:WindowMgr
+WindowMgr::getCurrentFocus	windowmgr.cc	/^EditWindow* WindowMgr::getCurrentFocus() { return pimpl->getCurrentFocus(); }$/;"	f	class:WindowMgr
+WindowMgr::getFileWindow	windowmgr.cc	/^optional<FileWindow*> WindowMgr::getFileWindow(const string& path,$/;"	f	class:WindowMgr
+WindowMgr::getScratchWindow	windowmgr.cc	/^optional<ScratchWindow*> WindowMgr::getScratchWindow(bool createIfNecessary) {$/;"	f	class:WindowMgr
+WindowMgr::init	windowmgr.cc	/^void WindowMgr::init() { pimpl->init(); }$/;"	f	class:WindowMgr
+WindowMgr::newColumn	windowmgr.cc	/^EditWindow* WindowMgr::newColumn(optional<EditWindow*> opt_ew) {$/;"	f	class:WindowMgr
+WindowMgr::pimpl	windowmgr.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:WindowMgr
+WindowMgr::replaceWindow	windowmgr.cc	/^void WindowMgr::replaceWindow(EditWindow* oldEW, EditWindow* newEW) {$/;"	f	class:WindowMgr
+WindowMgr::setEntryPlaceholderText	windowmgr.cc	/^void WindowMgr::setEntryPlaceholderText(const string& msg) {$/;"	f	class:WindowMgr
+WindowMgr::setFrontEditWindow	windowmgr.cc	/^void WindowMgr::setFrontEditWindow(EditWindow* ew) {$/;"	f	class:WindowMgr
+WindowMgr::splitWindow	windowmgr.cc	/^void WindowMgr::splitWindow(EditWindow& ew) { pimpl->splitWindow(ew); }$/;"	f	class:WindowMgr
+WordCaps	editwindow.cc	/^    WordCaps,$/;"	m	class:LastOpCode	file:
+addBuffer	file.cc	/^void File::Impl::addBuffer(const GsvBuffer& buf)$/;"	f	class:File::Impl
+addBuffer	file.cc	/^void File::addBuffer(const GsvBuffer& buf) { pimpl->addBuffer(buf); }$/;"	f	class:File
+addWindow	column.cc	/^void Column::Impl::addWindow(EditWindow& ew, EditWindow& sibling)$/;"	f	class:Column::Impl
+addWindow	column.cc	/^void Column::addWindow(EditWindow& ew, EditWindow& sibling) {$/;"	f	class:Column
+addWindow	windowmgr.cc	/^void WindowMgr::Impl::addWindow(const EditWindow& ew)$/;"	f	class:WindowMgr::Impl
+addWindow	windowmgr.cc	/^void WindowMgr::addWindow(const EditWindow& ew) { pimpl->addWindow(ew); }$/;"	f	class:WindowMgr
+appendText	scratchwindow.cc	/^void ScratchWindow::Impl::appendText(const string& text)$/;"	f	class:ScratchWindow::Impl
+appendText	scratchwindow.cc	/^void ScratchWindow::appendText(const string& text) { pimpl->appendText(text); }$/;"	f	class:ScratchWindow
+appendWindow	column.cc	/^void Column::Impl::appendWindow(const EditWindow& ew)$/;"	f	class:Column::Impl
+appendWindow	column.cc	/^void Column::appendWindow(const EditWindow& ew) { pimpl->appendWindow(ew); }$/;"	f	class:Column
+bubble	windowmgr.cc	/^void WindowMgr::Impl::bubble()$/;"	f	class:WindowMgr::Impl
+bubble	windowmgr.cc	/^void WindowMgr::bubble() { pimpl->bubble(); }$/;"	f	class:WindowMgr
+bubblePos	windowmgr.cc	/^    EditWindowPos bubblePos;	\/\/ position where the bubbling started$/;"	m	class:WindowMgr::Impl	file:
+buffer	editwindow.cc	/^    GsvBuffer buffer;$/;"	m	class:EditWindow::Impl	file:
+buffer	scratchwindow.cc	/^    GsvBuffer buffer;$/;"	m	class:ScratchBufferSingleton	file:
+bufferOnErase	file.cc	/^void File::Impl::bufferOnErase(const Gtk::TextBuffer::iterator start,$/;"	f	class:File::Impl
+bufferOnInsert	file.cc	/^void File::Impl::bufferOnInsert(const Gtk::TextBuffer::iterator& pos,$/;"	f	class:File::Impl
+bufferOnInsert	filewindow.cc	/^void FileWindow::Impl::bufferOnInsert(const Gtk::TextBuffer::iterator& pos,$/;"	f	class:FileWindow::Impl
+buffers	file.cc	/^    unique_ptr<vector<GsvBuffer>> buffers;$/;"	m	class:File::Impl	file:
+buildKeyHandlers	editwindow.cc	/^void EditWindow::Impl::buildKeyHandlers()$/;"	f	class:EditWindow::Impl
+buildListStore	chooser.cc	/^void Chooser::Impl::buildListStore(const string& pattern)$/;"	f	class:Chooser::Impl
+c	column.cc	/^    Column* c;$/;"	m	class:Column::Impl	file:
+ch_bubble	command.cc	/^CommandStatus Command::Impl::ch_bubble(const string& args)$/;"	f	class:Command::Impl
+ch_choose	command.cc	/^CommandStatus Command::Impl::ch_choose(const string& args)$/;"	f	class:Command::Impl
+ch_close	command.cc	/^CommandStatus Command::Impl::ch_close(const string& _)$/;"	f	class:Command::Impl
+ch_deleteBuffer	command.cc	/^CommandStatus Command::Impl::ch_deleteBuffer(const string& args)$/;"	f	class:Command::Impl
+ch_edit	command.cc	/^CommandStatus Command::Impl::ch_edit(const string& args)$/;"	f	class:Command::Impl
+ch_files	command.cc	/^CommandStatus Command::Impl::ch_files(const string& args)$/;"	f	class:Command::Impl
+ch_gotoLine	command.cc	/^CommandStatus Command::Impl::ch_gotoLine(const string& args)$/;"	f	class:Command::Impl
+ch_newColumn	command.cc	/^CommandStatus Command::Impl::ch_newColumn(const string& args)$/;"	f	class:Command::Impl
+ch_quit	command.cc	/^CommandStatus Command::Impl::ch_quit(const string& args)$/;"	f	class:Command::Impl
+ch_save	command.cc	/^CommandStatus Command::Impl::ch_save(const string& args)$/;"	f	class:Command::Impl
+ch_shade	command.cc	/^CommandStatus Command::Impl::ch_shade(const string& args)$/;"	f	class:Command::Impl
+ch_split	command.cc	/^CommandStatus Command::Impl::ch_split(const string& _)$/;"	f	class:Command::Impl
+chooser	chooser.cc	/^    Chooser* chooser;$/;"	m	class:Chooser::Impl	file:
+cleanup	filemgr.cc	/^void FileMgr::Impl::cleanup()$/;"	f	class:FileMgr::Impl
+cleanup	filemgr.cc	/^void FileMgr::cleanup() { pimpl->cleanup(); }$/;"	f	class:FileMgr
+closeWindow	column.cc	/^optional<unsigned int> Column::Impl::closeWindow(EditWindow* ew)$/;"	f	class:Column::Impl
+closeWindow	column.cc	/^optional<unsigned int> Column::closeWindow(EditWindow* ew) {$/;"	f	class:Column
+closeWindow	windowmgr.cc	/^bool WindowMgr::Impl::closeWindow(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+closeWindow	windowmgr.cc	/^bool WindowMgr::closeWindow(EditWindow* ew) { return pimpl->closeWindow(ew); }$/;"	f	class:WindowMgr
+closeWindowsForFile	column.cc	/^unsigned int Column::Impl::closeWindowsForFile(shared_ptr<File> f)$/;"	f	class:Column::Impl
+closeWindowsForFile	column.cc	/^unsigned int Column::closeWindowsForFile(shared_ptr<File> f) {$/;"	f	class:Column
+closeWindowsForFile	windowmgr.cc	/^void WindowMgr::Impl::closeWindowsForFile(shared_ptr<File> f)$/;"	f	class:WindowMgr::Impl
+closeWindowsForFile	windowmgr.cc	/^void WindowMgr::closeWindowsForFile(shared_ptr<File> f) {$/;"	f	class:WindowMgr
+colorBox	editwindow.cc	/^    Gtk::EventBox* colorBox;$/;"	m	class:EditWindow::Impl	file:
+colorBoxOnButtonPress	editwindow.cc	/^bool EditWindow::Impl::colorBoxOnButtonPress(GdkEventButton* ev)$/;"	f	class:EditWindow::Impl
+colorBoxOnDragDataGet	editwindow.cc	/^void EditWindow::Impl::colorBoxOnDragDataGet($/;"	f	class:EditWindow::Impl
+columns	windowmgr.cc	/^    Gtk::Grid columns;$/;"	m	class:WindowMgr::Impl	file:
+commandMap	command.cc	/^    map<string, CommandHandler> commandMap;$/;"	m	class:Command::Impl	file:
+cp	command.cc	/^    Command* cp;$/;"	m	class:Command::Impl	file:
+ctrlKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlKeyMap;$/;"	m	class:EditWindow::Impl	file:
+ctrlXCtrlKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlXCtrlKeyMap;$/;"	m	class:EditWindow::Impl	file:
+ctrlXKeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> ctrlXKeyMap;$/;"	m	class:EditWindow::Impl	file:
+curdir	chooser.cc	/^    string curdir;$/;"	m	class:Chooser::Impl	file:
+deleteBuffer	file.cc	/^void File::Impl::deleteBuffer(const GsvBuffer& buf)$/;"	f	class:File::Impl
+deleteBuffer	file.cc	/^void File::deleteBuffer(const GsvBuffer& buf) { pimpl->deleteBuffer(buf); }$/;"	f	class:File
+deleteFile	filemgr.cc	/^void FileMgr::Impl::deleteFile(shared_ptr<File> f)$/;"	f	class:FileMgr::Impl
+deleteFile	filemgr.cc	/^void FileMgr::deleteFile(shared_ptr<File> f) { pimpl->deleteFile(f); }$/;"	f	class:FileMgr
+deleteFromHistory	windowmgr.cc	/^void WindowMgr::Impl::deleteFromHistory(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+deleteFromHistory	windowmgr.cc	/^void WindowMgr::deleteFromHistory(EditWindow* ew) {$/;"	f	class:WindowMgr
+directories	chooser.cc	/^    shared_ptr<vector<string>> directories;$/;"	m	class:Chooser::Impl	file:
+dotfiles	chooser.cc	/^    shared_ptr<vector<string>> dotfiles;$/;"	m	class:Chooser::Impl	file:
+editWindowHistory	windowmgr.cc	/^    deque<EditWindow*>* editWindowHistory;$/;"	m	class:WindowMgr::Impl	file:
+editWindows	column.cc	/^    unique_ptr<vector<EditWindow*>> editWindows;$/;"	m	class:Column::Impl	file:
+entilde	util.cc	/^string entilde(const string& path)$/;"	f
+entry	chooser.cc	/^    Gtk::Entry* entry;$/;"	m	class:Chooser::Impl	file:
+entry	windowmgr.cc	/^    Gtk::Entry entry;$/;"	m	class:WindowMgr::Impl	file:
+entryBufferOnDeletedText	chooser.cc	/^void Chooser::Impl::entryBufferOnDeletedText(unsigned int placeholder1,$/;"	f	class:Chooser::Impl
+entryBufferOnInsertedText	chooser.cc	/^void Chooser::Impl::entryBufferOnInsertedText(unsigned int placeholder1,$/;"	f	class:Chooser::Impl
+entryOnActivate	chooser.cc	/^void Chooser::Impl::entryOnActivate()$/;"	f	class:Chooser::Impl
+entryOnActivate	windowmgr.cc	/^void WindowMgr::Impl::entryOnActivate()$/;"	f	class:WindowMgr::Impl
+entryOnFocus	windowmgr.cc	/^void WindowMgr::Impl::entryOnFocus()$/;"	f	class:WindowMgr::Impl
+entryOnKeyPress	chooser.cc	/^bool Chooser::Impl::entryOnKeyPress(GdkEventKey* ev)$/;"	f	class:Chooser::Impl
+entryOnKeyPress	windowmgr.cc	/^bool WindowMgr::Impl::entryOnKeyPress(GdkEventKey* ev)$/;"	f	class:WindowMgr::Impl
+ew	editwindow.cc	/^    EditWindow* ew;$/;"	m	class:EditWindow::Impl	file:
+execute	command.cc	/^CommandStatus Command::Impl::execute(const string& command)$/;"	f	class:Command::Impl
+execute	command.cc	/^CommandStatus Command::execute(const string& command) {$/;"	f	class:Command
+file	filewindow.cc	/^    shared_ptr<File> file;$/;"	m	class:FileWindow::Impl	file:
+fileMgr	main.cc	/^FileMgr* fileMgr;$/;"	v
+fileNameMatcher	chooser.cc	/^bool Chooser::Impl::fileNameMatcher(const string& filename,$/;"	f	class:Chooser::Impl
+files	filemgr.cc	/^    map<string, shared_ptr<File>> files;	\/\/ use '~' for HOME$/;"	m	class:FileMgr::Impl	file:
+fm	filemgr.cc	/^    FileMgr* fm;$/;"	m	class:FileMgr::Impl	file:
+focusMinibuffer	windowmgr.cc	/^void WindowMgr::Impl::focusMinibuffer()$/;"	f	class:WindowMgr::Impl
+focusMinibuffer	windowmgr.cc	/^void WindowMgr::focusMinibuffer() { pimpl->focusMinibuffer(); }$/;"	f	class:WindowMgr
+fw	filewindow.cc	/^    FileWindow* fw;$/;"	m	class:FileWindow::Impl	file:
+getBubbleNumber	editwindow.cc	/^unsigned int EditWindow::Impl::getBubbleNumber()$/;"	f	class:EditWindow::Impl
+getBubbleNumber	editwindow.cc	/^unsigned int EditWindow::getBubbleNumber() { return pimpl->getBubbleNumber(); }$/;"	f	class:EditWindow
+getBuffer	editwindow.cc	/^GsvBuffer& EditWindow::Impl::getBuffer()$/;"	f	class:EditWindow::Impl
+getBuffer	editwindow.cc	/^GsvBuffer& EditWindow::getBuffer() { return pimpl->getBuffer(); }$/;"	f	class:EditWindow
+getBuffer	scratchwindow.cc	/^    static GsvBuffer getBuffer() {$/;"	f	class:ScratchBufferSingleton
+getColorBox	editwindow.cc	/^Gtk::EventBox* EditWindow::Impl::getColorBox()$/;"	f	class:EditWindow::Impl
+getColorBox	editwindow.cc	/^Gtk::EventBox* EditWindow::getColorBox() { return pimpl->getColorBox(); }$/;"	f	class:EditWindow
+getColumn	windowmgr.cc	/^optional<Column&> WindowMgr::Impl::getColumn(unsigned int colNum)$/;"	f	class:WindowMgr::Impl
+getCurrentColumn	windowmgr.cc	/^Column& WindowMgr::Impl::getCurrentColumn()$/;"	f	class:WindowMgr::Impl
+getCurrentColumn	windowmgr.cc	/^Column& WindowMgr::getCurrentColumn() { return pimpl->getCurrentColumn(); }$/;"	f	class:WindowMgr
+getCurrentFocus	windowmgr.cc	/^EditWindow* WindowMgr::Impl::getCurrentFocus()$/;"	f	class:WindowMgr::Impl
+getCurrentFocus	windowmgr.cc	/^EditWindow* WindowMgr::getCurrentFocus() { return pimpl->getCurrentFocus(); }$/;"	f	class:WindowMgr
+getEditWindow	column.cc	/^optional<EditWindow*> Column::Impl::getEditWindow(const unsigned int rowNum)$/;"	f	class:Column::Impl
+getEditWindow	column.cc	/^optional<EditWindow*> Column::getEditWindow(const unsigned int rowNum) {$/;"	f	class:Column
+getEditWindow	windowmgr.cc	/^optional<EditWindow*> WindowMgr::Impl::getEditWindow(const EditWindowPos& pos)$/;"	f	class:WindowMgr::Impl
+getEditWindowPosition	windowmgr.cc	/^optional<EditWindowPos> WindowMgr::Impl::getEditWindowPosition($/;"	f	class:WindowMgr::Impl
+getFile	filemgr.cc	/^optional<shared_ptr<File>> FileMgr::Impl::getFile(const string& path,$/;"	f	class:FileMgr::Impl
+getFile	filemgr.cc	/^optional<shared_ptr<File>> FileMgr::getFile(const string& path,$/;"	f	class:FileMgr
+getFile	filewindow.cc	/^shared_ptr<File> FileWindow::Impl::getFile()$/;"	f	class:FileWindow::Impl
+getFile	filewindow.cc	/^shared_ptr<File> FileWindow::getFile() { return pimpl->getFile(); }$/;"	f	class:FileWindow
+getFileNames	filemgr.cc	/^vector<string> FileMgr::Impl::getFileNames()$/;"	f	class:FileMgr::Impl
+getFileNames	filemgr.cc	/^vector<string> FileMgr::getFileNames() { return pimpl->getFileNames(); }$/;"	f	class:FileMgr
+getFileWindow	column.cc	/^optional<FileWindow*> Column::Impl::getFileWindow(const string& path)$/;"	f	class:Column::Impl
+getFileWindow	column.cc	/^optional<FileWindow*> Column::getFileWindow(const string& path) {$/;"	f	class:Column
+getFileWindow	windowmgr.cc	/^optional<FileWindow*> WindowMgr::Impl::getFileWindow(const string& path,$/;"	f	class:WindowMgr::Impl
+getFileWindow	windowmgr.cc	/^optional<FileWindow*> WindowMgr::getFileWindow(const string& path,$/;"	f	class:WindowMgr
+getFilesOnFS	chooser.cc	/^void Chooser::Impl::getFilesOnFS(const string& directory,$/;"	f	class:Chooser::Impl
+getGioFile	file.cc	/^GioFile File::Impl::getGioFile()$/;"	f	class:File::Impl
+getGioFile	file.cc	/^GioFile File::getGioFile() { return pimpl->getGioFile(); }$/;"	f	class:File
+getNewBuffer	file.cc	/^GsvBuffer File::Impl::getNewBuffer() {$/;"	f	class:File::Impl
+getNewBuffer	file.cc	/^GsvBuffer File::getNewBuffer() { return pimpl->getNewBuffer(); }$/;"	f	class:File
+getNumColumns	windowmgr.cc	/^unsigned int WindowMgr::Impl::getNumColumns()$/;"	f	class:WindowMgr::Impl
+getRecentFiles	filemgr.cc	/^vector<string> FileMgr::Impl::getRecentFiles()$/;"	f	class:FileMgr::Impl
+getRecentFiles	filemgr.cc	/^vector<string> FileMgr::getRecentFiles() { return pimpl->getRecentFiles(); }$/;"	f	class:FileMgr
+getRow	column.cc	/^optional<unsigned int> Column::Impl::getRow(const EditWindow* ew)$/;"	f	class:Column::Impl
+getRow	column.cc	/^optional<unsigned int> Column::getRow(const EditWindow* ew) {$/;"	f	class:Column
+getScratchWindow	column.cc	/^optional<ScratchWindow*> Column::Impl::getScratchWindow()$/;"	f	class:Column::Impl
+getScratchWindow	column.cc	/^optional<ScratchWindow*> Column::getScratchWindow() {$/;"	f	class:Column
+getScratchWindow	windowmgr.cc	/^optional<ScratchWindow*> WindowMgr::Impl::getScratchWindow($/;"	f	class:WindowMgr::Impl
+getScratchWindow	windowmgr.cc	/^optional<ScratchWindow*> WindowMgr::getScratchWindow(bool createIfNecessary) {$/;"	f	class:WindowMgr
+getView	editwindow.cc	/^Gsv::View& EditWindow::Impl::getView()$/;"	f	class:EditWindow::Impl
+getView	editwindow.cc	/^Gsv::View& EditWindow::getView() { return pimpl->getView(); }$/;"	f	class:EditWindow
+giofile	file.cc	/^    GioFile giofile;$/;"	m	class:File::Impl	file:
+gotoLine	editwindow.cc	/^void EditWindow::Impl::gotoLine(unsigned int lineNum)$/;"	f	class:EditWindow::Impl
+gotoLine	editwindow.cc	/^void EditWindow::gotoLine(unsigned int lineNum) { pimpl->gotoLine(lineNum); }$/;"	f	class:EditWindow
+grabFocus	editwindow.cc	/^void EditWindow::Impl::grabFocus()$/;"	f	class:EditWindow::Impl
+grabFocus	editwindow.cc	/^void EditWindow::grabFocus() { pimpl->grabFocus(); }$/;"	f	class:EditWindow
+grid	chooser.cc	/^    Gtk::Grid* grid;$/;"	m	class:Chooser::Impl	file:
+grid	windowmgr.cc	/^    Gtk::Grid grid;$/;"	m	class:WindowMgr::Impl	file:
+headline	editwindow.cc	/^    Gtk::Grid* headline;$/;"	m	class:EditWindow::Impl	file:
+highlightLine	chooser.cc	/^void Chooser::Impl::highlightLine(unsigned int lineNum)$/;"	f	class:Chooser::Impl
+init	chooser.cc	/^void Chooser::Impl::init(const string& args)$/;"	f	class:Chooser::Impl
+init	chooser.cc	/^void Chooser::init(const string& args) { pimpl->init(args); }$/;"	f	class:Chooser
+init	column.cc	/^void Column::Impl::init()$/;"	f	class:Column::Impl
+init	column.cc	/^void Column::init() { pimpl->init(); }$/;"	f	class:Column
+init	file.cc	/^optional<string> File::Impl::init() {$/;"	f	class:File::Impl
+init	file.cc	/^optional<string> File::init() { return pimpl->init(); }$/;"	f	class:File
+init	filemgr.cc	/^void FileMgr::Impl::init()$/;"	f	class:FileMgr::Impl
+init	filemgr.cc	/^void FileMgr::init() { pimpl->init(); }$/;"	f	class:FileMgr
+init	filewindow.cc	/^void FileWindow::Impl::init() {}$/;"	f	class:FileWindow::Impl
+init	filewindow.cc	/^void FileWindow::init() { pimpl->init(); }$/;"	f	class:FileWindow
+init	scratchwindow.cc	/^void ScratchWindow::Impl::init()$/;"	f	class:ScratchWindow::Impl
+init	scratchwindow.cc	/^void ScratchWindow::init() { pimpl->init(); }$/;"	f	class:ScratchWindow
+init	windowmgr.cc	/^void WindowMgr::Impl::init()$/;"	f	class:WindowMgr::Impl
+init	windowmgr.cc	/^void WindowMgr::init() { pimpl->init(); }$/;"	f	class:WindowMgr
+kh_bubble	editwindow.cc	/^bool EditWindow::Impl::kh_bubble(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_ctrlX	editwindow.cc	/^bool EditWindow::Impl::kh_ctrlX(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_deleteBuffer	editwindow.cc	/^bool EditWindow::Impl::kh_deleteBuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_deleteWindow	editwindow.cc	/^bool EditWindow::Impl::kh_deleteWindow(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_findFile	editwindow.cc	/^bool EditWindow::Impl::kh_findFile(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_focusMinibuffer	editwindow.cc	/^bool EditWindow::Impl::kh_focusMinibuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_quit	editwindow.cc	/^bool EditWindow::Impl::kh_quit(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_recenter	editwindow.cc	/^bool EditWindow::Impl::kh_recenter(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_scrollDown	editwindow.cc	/^bool EditWindow::Impl::kh_scrollDown(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_scrollUp	editwindow.cc	/^bool EditWindow::Impl::kh_scrollUp(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_scroll_sub	editwindow.cc	/^bool EditWindow::Impl::kh_scroll_sub(bool forward)$/;"	f	class:EditWindow::Impl
+kh_splitWindow	editwindow.cc	/^bool EditWindow::Impl::kh_splitWindow(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+kh_switchBuffer	editwindow.cc	/^bool EditWindow::Impl::kh_switchBuffer(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+label	editwindow.cc	/^    Gtk::Label* label;$/;"	m	class:EditWindow::Impl	file:
+lastOp	editwindow.cc	/^    LastOp lastOp;$/;"	m	class:EditWindow::Impl	file:
+log	command.cc	/^void Command::Impl::log(const string& args)$/;"	f	class:Command::Impl
+log	command.cc	/^void Command::log(const std::string& msg) { pimpl->log(msg); }$/;"	f	class:Command
+main	main.cc	/^int main(int argc, char* argv[])$/;"	f
+mod1KeyMap	editwindow.cc	/^    std::map<guint, KeyHandler> mod1KeyMap;$/;"	m	class:EditWindow::Impl	file:
+modelColumns	chooser.cc	/^    ModelColumns modelColumns;$/;"	m	class:Chooser::Impl	file:
+modifying	file.cc	/^    bool modifying;	\/\/ multi-buffer modification is in progress$/;"	m	class:File::Impl	file:
+name	chooser.cc	/^    Gtk::TreeModelColumn<Glib::ustring> name;$/;"	m	class:ModelColumns	file:
+newColumn	windowmgr.cc	/^EditWindow* WindowMgr::Impl::newColumn(optional<EditWindow*> opt_ew)$/;"	f	class:WindowMgr::Impl
+newColumn	windowmgr.cc	/^EditWindow* WindowMgr::newColumn(optional<EditWindow*> opt_ew) {$/;"	f	class:WindowMgr
+path	file.cc	/^    string path;$/;"	m	class:File::Impl	file:
+pimpl	chooser.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Chooser
+pimpl	column.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Column
+pimpl	command.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:Command
+pimpl	editwindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:EditWindow
+pimpl	file.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:File
+pimpl	filemgr.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:FileMgr
+pimpl	filewindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:FileWindow
+pimpl	scratchwindow.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:ScratchWindow
+pimpl	windowmgr.h	/^    const std::unique_ptr<Impl> pimpl;$/;"	m	class:WindowMgr
+recentFiles	chooser.cc	/^    vector<string> recentFiles;$/;"	m	class:Chooser::Impl	file:
+recentFiles	filemgr.cc	/^    vector<string>* recentFiles;	\/\/ old to new; use '~' for HOME$/;"	m	class:FileMgr::Impl	file:
+refListStore	chooser.cc	/^    Glib::RefPtr<Gtk::ListStore> refListStore;$/;"	m	class:Chooser::Impl	file:
+regulars	chooser.cc	/^    shared_ptr<vector<string>> regulars;$/;"	m	class:Chooser::Impl	file:
+replaceWindow	column.cc	/^void Column::Impl::replaceWindow(EditWindow* oldEW, EditWindow* newEW)$/;"	f	class:Column::Impl
+replaceWindow	column.cc	/^void Column::replaceWindow(EditWindow* oldEW, EditWindow* newEW) {$/;"	f	class:Column
+replaceWindow	windowmgr.cc	/^void WindowMgr::Impl::replaceWindow(EditWindow* oldEW, EditWindow* newEW)$/;"	f	class:WindowMgr::Impl
+replaceWindow	windowmgr.cc	/^void WindowMgr::replaceWindow(EditWindow* oldEW, EditWindow* newEW) {$/;"	f	class:WindowMgr
+result	chooser.cc	/^    string* result;$/;"	m	class:Chooser::Impl	file:
+rowNum	chooser.cc	/^    Gtk::TreeModelColumn<unsigned int> rowNum;	\/\/ hidden field$/;"	m	class:ModelColumns	file:
+save	editwindow.cc	/^    virtual void save(const string& altFilename="") {}$/;"	f	class:EditWindow::Impl
+save	editwindow.h	/^    virtual void save(const std::string& altFilename) {}$/;"	f	class:EditWindow
+save	file.cc	/^void File::Impl::save(const string& text)$/;"	f	class:File::Impl
+save	file.cc	/^void File::save(const string& text) { pimpl->save(text); }$/;"	f	class:File
+save	filewindow.cc	/^void FileWindow::Impl::save(const string& altFilename)$/;"	f	class:FileWindow::Impl
+save	filewindow.cc	/^void FileWindow::save(const string& altFilename) { pimpl->save(altFilename); }$/;"	f	class:FileWindow
+scrolledWindow	chooser.cc	/^    Gtk::ScrolledWindow scrolledWindow;$/;"	m	class:Chooser::Impl	file:
+scrolledWindow	editwindow.cc	/^    Gtk::ScrolledWindow scrolledWindow;$/;"	m	class:EditWindow::Impl	file:
+setBubbleNumber	editwindow.cc	/^void EditWindow::Impl::setBubbleNumber(unsigned int num)$/;"	f	class:EditWindow::Impl
+setBubbleNumber	editwindow.cc	/^void EditWindow::setBubbleNumber(unsigned int num) {$/;"	f	class:EditWindow
+setBuffer	editwindow.cc	/^void EditWindow::Impl::setBuffer(const GsvBuffer& buf)$/;"	f	class:EditWindow::Impl
+setBuffer	editwindow.cc	/^void EditWindow::setBuffer(const GsvBuffer& buf) { pimpl->setBuffer(buf); }$/;"	f	class:EditWindow
+setBuffer	filewindow.cc	/^void FileWindow::Impl::setBuffer(const GsvBuffer& buf)$/;"	f	class:FileWindow::Impl
+setBuffer	filewindow.cc	/^void FileWindow::setBuffer(const GsvBuffer& buf) { pimpl->setBuffer(buf); }$/;"	f	class:FileWindow
+setEntryPlaceholderText	windowmgr.cc	/^void WindowMgr::Impl::setEntryPlaceholderText(const string& msg)$/;"	f	class:WindowMgr::Impl
+setEntryPlaceholderText	windowmgr.cc	/^void WindowMgr::setEntryPlaceholderText(const string& msg) {$/;"	f	class:WindowMgr
+setFile	filewindow.cc	/^void FileWindow::Impl::setFile(shared_ptr<File> f)$/;"	f	class:FileWindow::Impl
+setFile	filewindow.cc	/^void FileWindow::setFile(shared_ptr<File> file) { pimpl->setFile(file); }$/;"	f	class:FileWindow
+setFrontEditWindow	windowmgr.cc	/^void WindowMgr::Impl::setFrontEditWindow(EditWindow* ew)$/;"	f	class:WindowMgr::Impl
+setFrontEditWindow	windowmgr.cc	/^void WindowMgr::setFrontEditWindow(EditWindow* ew) {$/;"	f	class:WindowMgr
+setLabelText	editwindow.cc	/^void EditWindow::Impl::setLabelText(const string& text)$/;"	f	class:EditWindow::Impl
+setLabelText	editwindow.cc	/^void EditWindow::setLabelText(const string& text) {$/;"	f	class:EditWindow
+shadeMode	editwindow.cc	/^ShadeMode EditWindow::Impl::shadeMode(const ShadeMode& sm)$/;"	f	class:EditWindow::Impl
+shadeMode	editwindow.cc	/^ShadeMode EditWindow::shadeMode(const ShadeMode& sm) {$/;"	f	class:EditWindow
+shadeModeStatus	editwindow.cc	/^    ShadeMode shadeModeStatus;	\/\/ should be either Unshaded or Shaded$/;"	m	class:EditWindow::Impl	file:
+shortDesc	editwindow.h	/^    virtual const std::string shortDesc() { return ""; }$/;"	f	class:EditWindow
+shortDesc	filewindow.cc	/^const string FileWindow::Impl::shortDesc()$/;"	f	class:FileWindow::Impl
+shortDesc	filewindow.cc	/^const string FileWindow::shortDesc() { return pimpl->shortDesc(); }$/;"	f	class:FileWindow
+shortDesc	scratchwindow.cc	/^const string ScratchWindow::Impl::shortDesc()$/;"	f	class:ScratchWindow::Impl
+shortDesc	scratchwindow.cc	/^const string ScratchWindow::shortDesc() { return pimpl->shortDesc(); }$/;"	f	class:ScratchWindow
+splitWindow	windowmgr.cc	/^void WindowMgr::Impl::splitWindow(EditWindow& ew)$/;"	f	class:WindowMgr::Impl
+splitWindow	windowmgr.cc	/^void WindowMgr::splitWindow(EditWindow& ew) { pimpl->splitWindow(ew); }$/;"	f	class:WindowMgr
+sw	scratchwindow.cc	/^    ScratchWindow* sw;$/;"	m	class:ScratchWindow::Impl	file:
+toFullPath	util.cc	/^string toFullPath(const string& basedir, const string& path)$/;"	f
+treeView	chooser.cc	/^    Gtk::TreeView treeView;$/;"	m	class:Chooser::Impl	file:
+type	chooser.cc	/^    Gtk::TreeModelColumn<Glib::ustring> type;$/;"	m	class:ModelColumns	file:
+view	editwindow.cc	/^    Gsv::View view;$/;"	m	class:EditWindow::Impl	file:
+viewOnDragDataReceived	editwindow.cc	/^void EditWindow::Impl::viewOnDragDataReceived($/;"	f	class:EditWindow::Impl
+viewOnDragDrop	editwindow.cc	/^bool EditWindow::Impl::viewOnDragDrop($/;"	f	class:EditWindow::Impl
+viewOnFocusInOut	editwindow.cc	/^bool EditWindow::Impl::viewOnFocusInOut(GdkEventFocus* ev)$/;"	f	class:EditWindow::Impl
+viewOnKeyPress	editwindow.cc	/^bool EditWindow::Impl::viewOnKeyPress(GdkEventKey* ev)$/;"	f	class:EditWindow::Impl
+viewOnScroll	editwindow.cc	/^bool EditWindow::Impl::viewOnScroll(GdkEventScroll* ev)$/;"	f	class:EditWindow::Impl
+windowMgr	main.cc	/^WindowMgr* windowMgr;$/;"	v
+windowOnDelete	windowmgr.cc	/^bool WindowMgr::Impl::windowOnDelete(GdkEventAny* ev)$/;"	f	class:WindowMgr::Impl
+wm	windowmgr.cc	/^    WindowMgr* wm;$/;"	m	class:WindowMgr::Impl	file:
+wrapperForLabel	editwindow.cc	/^    Gtk::EventBox* wrapperForLabel;	\/\/ for coloring the label background$/;"	m	class:EditWindow::Impl	file:
